@@ -6,7 +6,8 @@ export const authPaths = {
   confirmAccount: 'confirm-account',
 };
 
-export const adminPaths = {
-  root: 'admin',
+export const userPaths = {
+  root: 'user',
+  home: 'home',
   profile: 'profile',
 };

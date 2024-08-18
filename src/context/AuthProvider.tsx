@@ -1,9 +1,10 @@
 import clientAxios from '@/config/axios';
+import { userPaths } from '@/constants/routerPaths';
 import axios from 'axios';
 import { useState, createContext, ReactNode, FC, useEffect } from 'react';
 
 interface AuthData {
-  id: string;
+  _id: string;
   name: string;
   lastName: string;
   email: string;
@@ -15,18 +16,24 @@ interface AuthData {
 export interface AuthContextType {
   auth: AuthData | null;
   setAuth: React.Dispatch<React.SetStateAction<AuthData | null>>;
+  loading: boolean;
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [auth, setAuth] = useState<AuthData | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const authenticateUser = async () => {
       const token = localStorage.getItem('blog_app_token');
 
-      if (!token) return;
+      if (!token) {
+        setLoading(false);
+        return;
+      }
 
       const config = {
         headers: {
@@ -36,13 +43,18 @@ const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
       };
 
       try {
-        const { data } = await clientAxios('/users/admin/profile', config);
-        setAuth(data);
+        const { data } = await clientAxios(
+          `/users/${userPaths.root}/${userPaths.profile}`,
+          config
+        );
+        setAuth({ ...data, token });
       } catch (error) {
         if (axios.isAxiosError(error)) {
           error.response?.data.message;
           setAuth(null);
         }
+      } finally {
+        setLoading(false);
       }
     };
     authenticateUser();
@@ -53,6 +65,8 @@ const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
       value={{
         auth,
         setAuth,
+        loading,
+        setLoading,
       }}
     >
       {children}

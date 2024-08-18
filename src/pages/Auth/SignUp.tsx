@@ -1,6 +1,6 @@
 import Alert from '@/components/Alert';
 import clientAxios from '@/config/axios';
-import { adminPaths, authPaths } from '@/constants/routerPaths';
+import { userPaths, authPaths } from '@/constants/routerPaths';
 import { Variant } from '@/constants/variantsAlert';
 import useAlert from '@/hooks/useAlert';
 import {
@@ -36,7 +36,7 @@ const SignUpPage = () => {
   const { alert, showAlert } = useAlert();
   const navigate = useNavigate();
 
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { name, lastName, email, password, confirmPassword } = initialValues;
 
@@ -75,7 +75,10 @@ const SignUpPage = () => {
     setIsLoading(true);
 
     try {
-      await clientAxios.post('/users', initialValues);
+      await clientAxios.post(
+        `/users/${authPaths.root}/register`,
+        initialValues
+      );
       showAlert('Usuario registrado exitosamente', false);
 
       setInitialValues({
@@ -93,7 +96,7 @@ const SignUpPage = () => {
       setIsLoading(false);
     }
     setTimeout(() => {
-      navigate(`/${adminPaths.root}/${adminPaths.profile}`);
+      navigate(`/${userPaths.root}/${userPaths.home}`);
     }, 2000);
   };
 
@@ -121,10 +124,12 @@ const SignUpPage = () => {
 
         <div className="w-full mx-auto mt-8">
           {alert.message && (
-            <Alert
-              message={alert.message}
-              variant={alert.error ? Variant.ERROR : Variant.SUCCESS}
-            />
+            <div className="my-2">
+              <Alert
+                message={alert.message}
+                variant={alert.error ? Variant.ERROR : Variant.SUCCESS}
+              />
+            </div>
           )}
           {isLoading && (
             <div className="flex items-center justify-center">

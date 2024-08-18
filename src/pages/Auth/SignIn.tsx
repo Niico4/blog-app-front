@@ -1,8 +1,9 @@
 import Alert from '@/components/Alert';
 import clientAxios from '@/config/axios';
-import { adminPaths, authPaths } from '@/constants/routerPaths';
+import { userPaths, authPaths } from '@/constants/routerPaths';
 import { Variant } from '@/constants/variantsAlert';
 import useAlert from '@/hooks/useAlert';
+import useAuth from '@/hooks/useAuth';
 import {
   Button,
   Card,
@@ -23,10 +24,11 @@ const SignInPage = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const { alert, showAlert } = useAlert();
+  const { setAuth } = useAuth();
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     showAlert('', false);
@@ -46,19 +48,24 @@ const SignInPage = () => {
 
     try {
       const { data } = await clientAxios.post(
-        '/users/auth/login',
+        `/users/${authPaths.root}/login`,
         initialValues
       );
-      showAlert('Autenticación exitosa', false);
 
+      showAlert('Autenticación exitosa', false);
       localStorage.setItem('blog_app_token', data.token);
+
+      const profileResponse = await clientAxios(
+        `/users/${userPaths.root}/${userPaths.profile}`,
+        { headers: { Authorization: `Bearer ${data.token}` } }
+      );
+      setAuth({ ...profileResponse.data, token: data.token });
+      navigate(`/${userPaths.root}/${userPaths.home}`);
 
       setInitialValues({
         email: '',
         password: '',
       });
-
-      navigate(`/${adminPaths.root}/${adminPaths.profile}`);
     } catch (error) {
       if (axios.isAxiosError(error)) {
         showAlert(error.response?.data.message, true);
@@ -83,10 +90,12 @@ const SignInPage = () => {
 
         <div className="w-full mx-auto">
           {alert.message && (
-            <Alert
-              message={alert.message}
-              variant={alert.error ? Variant.ERROR : Variant.SUCCESS}
-            />
+            <div className="my-2">
+              <Alert
+                message={alert.message}
+                variant={alert.error ? Variant.ERROR : Variant.SUCCESS}
+              />
+            </div>
           )}
           {isLoading && (
             <div className="flex items-center justify-center">
