@@ -18,6 +18,7 @@ export interface AuthContextType {
   setAuth: React.Dispatch<React.SetStateAction<AuthData | null>>;
   loading: boolean;
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  signOut: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -60,6 +61,11 @@ const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
     authenticateUser();
   }, []);
 
+  const signOut = () => {
+    localStorage.removeItem('blog_app_token');
+    setAuth(null);
+  };
+
   return (
     <AuthContext.Provider
       value={{
@@ -67,6 +73,7 @@ const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
         setAuth,
         loading,
         setLoading,
+        signOut,
       }}
     >
       {children}

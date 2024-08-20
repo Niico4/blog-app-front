@@ -26,6 +26,7 @@ const ForgotPasswordPage = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email === '' || email.length < 6 || !emailRegex.test(email)) {
       showAlert('Por favor, introduce un email válido', true);
+      return;
     }
 
     try {

@@ -9,5 +9,11 @@ export const authPaths = {
 export const userPaths = {
   root: 'user',
   home: 'home',
+  blog: 'blog',
+  aboutUs: 'about-us',
+  testimonials: 'testimonials',
+  updates: 'updates',
+
   profile: 'profile',
+  settings: 'settings',
 };

@@ -9,7 +9,11 @@ const ProtectedRoute = () => {
     return <Spinner label="Cargando..." color="secondary" />;
   }
 
-  return auth?._id ? <Outlet /> : <Navigate to="/" />;
+  if (!auth?._id) {
+    return <Navigate to="/" />;
+  }
+
+  return <Outlet />;
 };
 
 export default ProtectedRoute;

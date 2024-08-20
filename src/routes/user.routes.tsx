@@ -9,5 +9,9 @@ interface RouteType {
 
 export const userRoutes: RouteType[] = [
   { path: userPaths.home, element: <HomePage /> },
-  { path: userPaths.profile, element: <h1>hola munod</h1> },
+  { path: userPaths.blog, element: <h1>blog</h1> },
+  { path: userPaths.aboutUs, element: <h1>sobre nosotros</h1> },
+  { path: userPaths.testimonials, element: <h1>testimonios</h1> },
+  { path: userPaths.updates, element: <h1>novedades</h1> },
+  { path: userPaths.settings, element: <h1>configuración</h1> },
 ];
