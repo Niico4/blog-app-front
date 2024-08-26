@@ -1,0 +1,106 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Avances en la Inteligencia Artificial: Nuevas Técnicas de Aprendizaje",
+      "description": "Los investigadores han desarrollado nuevas técnicas de aprendizaje automático que prometen mejorar la precisión de los modelos de IA en diversas aplicaciones, desde el reconocimiento de imágenes hasta el procesamiento del lenguaje natural.",
+      "date": "2024-08-02",
+      "author": "Laura Smith",
+      "email": "laura@correo.com",
+      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
+      "url": "https://www.example.com/avances-en-la-inteligencia-artificial"
+    },
+    {
+      "id": "2",
+      "title": "Descubrimientos Recientes en el Espacio: Nuevas Imágenes del Telescopio Hubble",
+      "description": "El telescopio Hubble ha capturado nuevas imágenes sorprendentes del espacio profundo, revelando detalles nunca antes vistos de galaxias lejanas y cúmulos estelares.",
+      "date": "2024-08-03",
+      "author": "Michael Johnson",
+      "email": "michael@correo.com",
+      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
+      "url": "https://www.example.com/descubrimientos-espacio-hubble"
+    },
+    {
+      "id": "3",
+      "title": "Tendencias en Tecnología: El Impacto de la 5G en la Vida Cotidiana",
+      "description": "La implementación de redes 5G está comenzando a cambiar la forma en que interactuamos con la tecnología, ofreciendo velocidades de conexión más rápidas y nuevas oportunidades para el desarrollo de aplicaciones.",
+      "date": "2024-08-04",
+      "author": "Emily Davis",
+      "email": "emily@correo.com",
+      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
+      "url": "https://www.example.com/tendencias-tecnologia-5g"
+    },
+    {
+      "id": "4",
+      "title": "Nuevas Estrategias en la Lucha Contra el Cambio Climático",
+      "description": "Expertos en medio ambiente están proponiendo nuevas estrategias para mitigar el impacto del cambio climático, enfocándose en la reducción de emisiones y la conservación de recursos naturales.",
+      "date": "2024-08-05",
+      "author": "Sarah Williams",
+      "email": "sarah@correo.com",
+      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
+      "url": "https://www.example.com/estrategias-cambio-climatico"
+    },
+    {
+      "id": "5",
+      "title": "El Auge del Teletrabajo: Cómo Está Transformando las Empresas",
+      "description": "El teletrabajo se está convirtiendo en una norma en muchas empresas, cambiando la dinámica laboral y presentando nuevos desafíos y oportunidades para la gestión del trabajo remoto.",
+      "date": "2024-08-12s",
+      "author": "James Anderson",
+      "email": "james@correo.com",
+      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
+      "url": "https://www.example.com/auge-teletrabajo"
+    }
+  ],
+  "postsImportant": [
+    {
+      "id": "1",
+      "title": "Revolución en Energías Renovables: Nuevas Tecnologías de Energía Solar",
+      "description": "Las últimas innovaciones en tecnología solar están estableciendo nuevos estándares para la eficiencia y la sostenibilidad en la generación de energía renovable.",
+      "date": "2024-08-20T11:00:00Z",
+      "author": "Ana Martínez",
+      "email": "ana.martinez@example.com",
+      "imageUrl": "https://via.placeholder.com/800x400?text=Energias+Renovables",
+      "url": "https://www.example.com/revolucion-energias-renovables"
+    },
+    {
+      "id": "2",
+      "title": "La Inteligencia Artificial en la Medicina: Avances y Aplicaciones",
+      "description": "El uso de inteligencia artificial en el campo de la medicina está revolucionando el diagnóstico y el tratamiento de enfermedades, con aplicaciones innovadoras que mejoran la precisión y la eficacia.",
+      "date": "2024-08-19T09:15:00Z",
+      "author": "Carlos Gómez",
+      "email": "carlos.gomez@example.com",
+      "imageUrl": "https://via.placeholder.com/800x400?text=IA+Medicina",
+      "url": "https://www.example.com/ia-en-medicina"
+    },
+    {
+      "id": "3",
+      "title": "Tendencias de Diseño en 2024: Lo Que Viene en la Moda y el Interiorismo",
+      "description": "Explora las tendencias emergentes en diseño para el año 2024, incluyendo estilos, colores y conceptos que están marcando la pauta en moda y decoración.",
+      "date": "2024-08-18T16:30:00Z",
+      "author": "Laura Pérez",
+      "email": "laura.perez@example.com",
+      "imageUrl": "https://via.placeholder.com/800x400?text=Tendencias+Diseno",
+      "url": "https://www.example.com/tendencias-diseno-2024"
+    },
+    {
+      "id": "4",
+      "title": "Desarrollo Sostenible en Ciudades: Nuevas Iniciativas para un Futuro Verde",
+      "description": "Las ciudades están adoptando nuevas iniciativas para promover el desarrollo sostenible, con proyectos innovadores que buscan reducir el impacto ambiental y mejorar la calidad de vida.",
+      "date": "2024-08-17T13:45:00Z",
+      "author": "Marta Rodríguez",
+      "email": "marta.rodriguez@example.com",
+      "imageUrl": "https://via.placeholder.com/800x400?text=Desarrollo+Sostenible",
+      "url": "https://www.example.com/desarrollo-sostenible-ciudades"
+    },
+    {
+      "id": "5",
+      "title": "La Evolución de la Tecnología Móvil: ¿Qué Esperar en el Futuro?",
+      "description": "Analizamos cómo está evolucionando la tecnología móvil y qué avances podemos esperar en el futuro cercano, incluyendo nuevos dispositivos y aplicaciones innovadoras.",
+      "date": "2024-08-16T14:00:00Z",
+      "author": "David Fernández",
+      "email": "david.fernandez@example.com",
+      "imageUrl": "https://via.placeholder.com/800x400?text=Tecnologia+Movil",
+      "url": "https://www.example.com/evolucion-tecnologia-movil"
+    }
+  ]
+}

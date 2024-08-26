@@ -1,23 +1,27 @@
+import { authPaths, userPaths } from '@/constants/routerPaths';
+import { AuthProvider } from '@/context/AuthProvider';
+import { PostProvider } from '@/context/PostProvider';
+import useAuth from '@/hooks/useAuth';
+import AppLayout from '@/layout/AppLayout';
+import AuthLayout from '@/layout/AuthLayout';
+import { authRoutes, userRoutes } from '@/routes/index.routes';
+import { Spinner } from '@nextui-org/react';
 import {
   Navigate,
   Route,
   BrowserRouter as Router,
   Routes,
 } from 'react-router-dom';
-import { userPaths, authPaths } from '@/constants/routerPaths';
-import AuthLayout from '@/layout/AuthLayout';
-import { AuthProvider } from '@/context/AuthProvider';
-import AppLayout from '@/layout/AppLayout';
-import { authRoutes, userRoutes } from '@/routes/index.routes';
-import useAuth from '@/hooks/useAuth';
-import { Spinner } from '@nextui-org/react';
+
 import { ProtectedRoute } from './Auth/index';
 
 export default function AppRouter() {
   return (
     <Router>
       <AuthProvider>
-        <AppRoutes />
+        <PostProvider>
+          <AppRoutes />
+        </PostProvider>
       </AuthProvider>
     </Router>
   );
