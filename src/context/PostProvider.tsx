@@ -49,8 +49,17 @@ export const PostProvider: FC<{ children: ReactNode }> = ({ children }) => {
         };
 
         const { data } = await clientAxios('/posts', config);
-
+        console.log('Datos recibidos:', data);
         setPosts(data);
+        const formattedPosts = data.map((post: IPost) => ({
+          ...post,
+          createdAt:
+            typeof post.createdAt === 'number'
+              ? post.createdAt
+              : new Date(post.createdAt).getTime(),
+        }));
+
+        setPosts(formattedPosts);
       } catch (error) {
         console.error(error);
         if (axios.isAxiosError(error)) {
@@ -67,26 +76,21 @@ export const PostProvider: FC<{ children: ReactNode }> = ({ children }) => {
   };
 
   const deletePost = async (id: string) => {
-    const confirmAlert = confirm('¿Deseas eliminar la publicación?');
+    try {
+      const token = localStorage.getItem('blog_app_token');
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+      };
 
-    if (confirmAlert) {
-      try {
-        const token = localStorage.getItem('blog_app_token');
-        const config = {
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${token}`,
-          },
-        };
+      await clientAxios.delete(`/posts/${id}`, config);
 
-        const { data } = await clientAxios.delete(`/posts/${id}`, config);
-        const stateUpdate = posts.map((postState) =>
-          postState._id === data._id ? data : postState
-        );
-        setPosts(stateUpdate);
-      } catch (error) {
-        console.error(error);
-      }
+      const stateUpdate = posts.filter((postState) => postState._id !== id);
+      setPosts(stateUpdate);
+    } catch (error) {
+      console.error(error);
     }
   };
 
@@ -99,6 +103,7 @@ export const PostProvider: FC<{ children: ReactNode }> = ({ children }) => {
       createdAt: Date.now(),
       tags: [],
     });
+
   const savePost = async (post: IPost) => {
     const token = localStorage.getItem('blog_app_token');
     const config = {
@@ -127,7 +132,7 @@ export const PostProvider: FC<{ children: ReactNode }> = ({ children }) => {
       try {
         const { data } = await clientAxios.post('/posts', post, config);
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const { createdAt, updatedAt, __v, ...savePost } = data;
+        const { updatedAt, __v, ...savePost } = data;
 
         setPosts([savePost as IPost, ...posts]);
       } catch (error) {

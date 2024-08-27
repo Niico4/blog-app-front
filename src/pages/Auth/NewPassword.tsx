@@ -1,4 +1,4 @@
-import Alert from '@/components/Alert';
+import Alert from '@/components/common/Alert';
 import clientAxios from '@/config/axios';
 import { authPaths } from '@/constants/routerPaths';
 import { Variant } from '@/constants/variantsAlert';
