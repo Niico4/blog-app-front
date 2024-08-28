@@ -1,5 +1,6 @@
 import clientAxios from '@/config/axios';
 import useAlert from '@/hooks/useAlert';
+import useAuth from '@/hooks/useAuth';
 import axios from 'axios';
 import { createContext, FC, ReactNode, useEffect, useState } from 'react';
 
@@ -34,6 +35,7 @@ export const PostProvider: FC<{ children: ReactNode }> = ({ children }) => {
     tags: [],
   });
   const { showAlert } = useAlert();
+  const { auth } = useAuth();
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -68,7 +70,7 @@ export const PostProvider: FC<{ children: ReactNode }> = ({ children }) => {
     };
 
     fetchPosts();
-  }, []);
+  }, [auth]);
 
   const updatePost = (updatedPost: IPost) => {
     setPost(updatedPost);

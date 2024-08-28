@@ -13,6 +13,10 @@ interface AuthData {
   phoneNumber: string | null;
   webSite: string | null;
 }
+interface UserChangePassword {
+  currentPassword: string;
+  newPassword: string;
+}
 
 export interface AuthContextType {
   auth: AuthData | null;
@@ -21,6 +25,7 @@ export interface AuthContextType {
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   updateProfile: (dataUpdated: UserUpdate) => void;
   signOut: () => void;
+  saveNewPassword: (dataUser: UserChangePassword) => void;
 }
 
 type UserUpdate = Omit<AuthData, 'token'>;
@@ -83,9 +88,9 @@ const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
     try {
       const url = `users/${userPaths.root}/${userPaths.profile}/${dataUpdated._id}`;
-      await clientAxios.put(url, dataUpdated, config);
+      const { data } = await clientAxios.put(url, dataUpdated, config);
 
-      return showAlert('Guardado correctamente', false);
+      return showAlert(data.message, false);
     } catch (error) {
       console.error(error);
       if (axios.isAxiosError(error)) {
@@ -99,6 +104,33 @@ const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
     setAuth(null);
   };
 
+  const saveNewPassword = async (dataUser: UserChangePassword) => {
+    const token = localStorage.getItem('blog_app_token');
+
+    if (!token) {
+      setLoading(false);
+      return;
+    }
+
+    const config = {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    };
+
+    try {
+      const url = `users/${userPaths.root}/${userPaths.changePassword}`;
+      const { data } = await clientAxios.put(url, dataUser, config);
+      return showAlert(data.message, false);
+    } catch (error) {
+      console.error(error);
+      if (axios.isAxiosError(error)) {
+        return showAlert(error.response?.data.message, true);
+      }
+    }
+  };
+
   return (
     <AuthContext.Provider
       value={{
@@ -108,6 +140,7 @@ const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
         setLoading,
         updateProfile,
         signOut,
+        saveNewPassword,
       }}
     >
       {children}
