@@ -7,100 +7,200 @@
       "date": "2024-08-02",
       "author": "Laura Smith",
       "email": "laura@correo.com",
-      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?q=80&w=2042&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "url": "https://www.example.com/avances-en-la-inteligencia-artificial"
     },
     {
       "id": "2",
-      "title": "Descubrimientos Recientes en el Espacio: Nuevas Imágenes del Telescopio Hubble",
-      "description": "El telescopio Hubble ha capturado nuevas imágenes sorprendentes del espacio profundo, revelando detalles nunca antes vistos de galaxias lejanas y cúmulos estelares.",
-      "date": "2024-08-03",
-      "author": "Michael Johnson",
-      "email": "michael@correo.com",
-      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
-      "url": "https://www.example.com/descubrimientos-espacio-hubble"
+      "title": "Exploración Espacial: La NASA Anuncia Nueva Misión a Marte",
+      "description": "La NASA ha revelado su nueva misión a Marte, con el objetivo de buscar signos de vida pasada y recolectar muestras para su análisis futuro.",
+      "date": "2024-08-04",
+      "author": "James Anderson",
+      "email": "james@espacio.com",
+      "imageUrl": "https://images.unsplash.com/photo-1581901811881-2695b594d5ec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/mision-a-marte"
     },
     {
       "id": "3",
-      "title": "Tendencias en Tecnología: El Impacto de la 5G en la Vida Cotidiana",
-      "description": "La implementación de redes 5G está comenzando a cambiar la forma en que interactuamos con la tecnología, ofreciendo velocidades de conexión más rápidas y nuevas oportunidades para el desarrollo de aplicaciones.",
-      "date": "2024-08-04",
-      "author": "Emily Davis",
-      "email": "emily@correo.com",
-      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
-      "url": "https://www.example.com/tendencias-tecnologia-5g"
+      "title": "Innovaciones en Energías Renovables: Nuevas Tecnologías Ecológicas",
+      "description": "Las últimas innovaciones en energías renovables prometen una mayor eficiencia y sostenibilidad en la producción de energía limpia.",
+      "date": "2024-08-07",
+      "author": "Emily Brown",
+      "email": "emily@verde.com",
+      "imageUrl": "https://images.unsplash.com/photo-1503350860469-854c1c495118?q=80&w=2179&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/tecnologias-ecologicas"
     },
     {
       "id": "4",
-      "title": "Nuevas Estrategias en la Lucha Contra el Cambio Climático",
-      "description": "Expertos en medio ambiente están proponiendo nuevas estrategias para mitigar el impacto del cambio climático, enfocándose en la reducción de emisiones y la conservación de recursos naturales.",
-      "date": "2024-08-05",
-      "author": "Sarah Williams",
-      "email": "sarah@correo.com",
-      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
-      "url": "https://www.example.com/estrategias-cambio-climatico"
+      "title": "Tendencias en Tecnología: El Auge de la Realidad Aumentada",
+      "description": "La realidad aumentada está revolucionando la manera en que interactuamos con el mundo digital, desde juegos hasta aplicaciones educativas.",
+      "date": "2024-08-10",
+      "author": "Michael Clark",
+      "email": "michael@tecnologia.com",
+      "imageUrl": "https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=2224&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/realidad-aumentada"
     },
     {
       "id": "5",
-      "title": "El Auge del Teletrabajo: Cómo Está Transformando las Empresas",
-      "description": "El teletrabajo se está convirtiendo en una norma en muchas empresas, cambiando la dinámica laboral y presentando nuevos desafíos y oportunidades para la gestión del trabajo remoto.",
-      "date": "2024-08-12s",
-      "author": "James Anderson",
-      "email": "james@correo.com",
-      "imageUrl": "https://wallpapers.com/images/high/rick-and-morty-pictures-vd4uc3px3kiezndp.webp",
-      "url": "https://www.example.com/auge-teletrabajo"
+      "title": "Salud y Bienestar: Nuevas Estrategias para Combatir el Estrés",
+      "description": "Expertos en salud mental presentan nuevas estrategias y técnicas para manejar y reducir el estrés en la vida cotidiana.",
+      "date": "2024-08-12",
+      "author": "Olivia Johnson",
+      "email": "olivia@salud.com",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1665203618989-e04554a539b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/combatir-estres"
+    },
+    {
+      "id": "6",
+      "title": "Economía Global: Impacto de la Inteligencia Artificial en el Mercado Laboral",
+      "description": "Un análisis profundo del impacto que la inteligencia artificial está teniendo en las oportunidades y desafíos del mercado laboral global.",
+      "date": "2024-08-15",
+      "author": "David Lee",
+      "email": "david@economia.com",
+      "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2130&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/ia-mercado-laboral"
+    },
+    {
+      "id": "7",
+      "title": "Avances en Medicina: Nuevos Tratamientos para Enfermedades Raras",
+      "description": "Investigadores han desarrollado nuevos tratamientos que ofrecen esperanza a pacientes con enfermedades raras y difíciles de tratar.",
+      "date": "2024-08-18",
+      "author": "Sophia Martinez",
+      "email": "sophia@medicina.com",
+      "imageUrl": "https://images.unsplash.com/photo-1576669802218-d535933f897c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/tratamientos-enfermedades-raras"
+    },
+    {
+      "id": "8",
+      "title": "Cambio Climático: Medidas Urgentes para Reducir la Huella de Carbono",
+      "description": "Expertos en cambio climático discuten las medidas urgentes necesarias para reducir la huella de carbono y mitigar el impacto ambiental.",
+      "date": "2024-08-21",
+      "author": "Daniel White",
+      "email": "daniel@clima.com",
+      "imageUrl": "https://images.unsplash.com/photo-1562155955-1cb2d73488d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/reducir-huella-carbono"
     }
   ],
   "postsImportant": [
     {
-      "id": "1",
-      "title": "Revolución en Energías Renovables: Nuevas Tecnologías de Energía Solar",
-      "description": "Las últimas innovaciones en tecnología solar están estableciendo nuevos estándares para la eficiencia y la sostenibilidad en la generación de energía renovable.",
-      "date": "2024-08-20T11:00:00Z",
-      "author": "Ana Martínez",
-      "email": "ana.martinez@example.com",
-      "imageUrl": "https://via.placeholder.com/800x400?text=Energias+Renovables",
-      "url": "https://www.example.com/revolucion-energias-renovables"
+      "id": "9",
+      "title": "Tendencias en Educación: El Futuro del Aprendizaje en Línea",
+      "description": "Un vistazo a cómo la educación en línea está evolucionando y las nuevas herramientas y metodologías que están transformando el aprendizaje.",
+      "date": "2024-08-24",
+      "author": "Isabella Wilson",
+      "email": "isabella@educacion.com",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1664300813371-7e2e101f6f85?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/educacion-en-linea"
     },
     {
-      "id": "2",
-      "title": "La Inteligencia Artificial en la Medicina: Avances y Aplicaciones",
-      "description": "El uso de inteligencia artificial en el campo de la medicina está revolucionando el diagnóstico y el tratamiento de enfermedades, con aplicaciones innovadoras que mejoran la precisión y la eficacia.",
-      "date": "2024-08-19T09:15:00Z",
-      "author": "Carlos Gómez",
-      "email": "carlos.gomez@example.com",
-      "imageUrl": "https://via.placeholder.com/800x400?text=IA+Medicina",
-      "url": "https://www.example.com/ia-en-medicina"
+      "id": "10",
+      "title": "Innovaciones en Transporte: El Futuro de los Vehículos Eléctricos",
+      "description": "Explora cómo las innovaciones en la tecnología de vehículos eléctricos están cambiando el futuro del transporte y la movilidad.",
+      "date": "2024-08-27",
+      "author": "Alexander Harris",
+      "email": "alexander@transporte.com",
+      "imageUrl": "https://images.unsplash.com/photo-1692600409678-df2024a29af1?q=80&w=2089&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/vehiculos-electricos"
     },
     {
-      "id": "3",
-      "title": "Tendencias de Diseño en 2024: Lo Que Viene en la Moda y el Interiorismo",
-      "description": "Explora las tendencias emergentes en diseño para el año 2024, incluyendo estilos, colores y conceptos que están marcando la pauta en moda y decoración.",
-      "date": "2024-08-18T16:30:00Z",
-      "author": "Laura Pérez",
-      "email": "laura.perez@example.com",
-      "imageUrl": "https://via.placeholder.com/800x400?text=Tendencias+Diseno",
-      "url": "https://www.example.com/tendencias-diseno-2024"
+      "id": "11",
+      "title": "Cultura Pop: La Influencia de los Videojuegos en el Entretenimiento Moderno",
+      "description": "Cómo los videojuegos están moldeando la cultura pop y transformando la industria del entretenimiento moderno.",
+      "date": "2024-08-29",
+      "author": "Mia Taylor",
+      "email": "mia@entretenimiento.com",
+      "imageUrl": "https://images.unsplash.com/photo-1635514569146-9a9607ecf303?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/videojuegos-cultura"
     },
     {
-      "id": "4",
-      "title": "Desarrollo Sostenible en Ciudades: Nuevas Iniciativas para un Futuro Verde",
-      "description": "Las ciudades están adoptando nuevas iniciativas para promover el desarrollo sostenible, con proyectos innovadores que buscan reducir el impacto ambiental y mejorar la calidad de vida.",
-      "date": "2024-08-17T13:45:00Z",
-      "author": "Marta Rodríguez",
-      "email": "marta.rodriguez@example.com",
-      "imageUrl": "https://via.placeholder.com/800x400?text=Desarrollo+Sostenible",
-      "url": "https://www.example.com/desarrollo-sostenible-ciudades"
+      "id": "12",
+      "title": "Recetas Saludables: Nuevas Ideas para Comidas Nutritivas",
+      "description": "Descubre nuevas recetas y consejos para preparar comidas saludables y nutritivas que son fáciles de hacer en casa.",
+      "date": "2024-09-01",
+      "author": "Charlotte King",
+      "email": "charlotte@recetas.com",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1701616947399-d9d51380445a?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/comidas-nutritivas"
     },
     {
-      "id": "5",
-      "title": "La Evolución de la Tecnología Móvil: ¿Qué Esperar en el Futuro?",
-      "description": "Analizamos cómo está evolucionando la tecnología móvil y qué avances podemos esperar en el futuro cercano, incluyendo nuevos dispositivos y aplicaciones innovadoras.",
-      "date": "2024-08-16T14:00:00Z",
-      "author": "David Fernández",
-      "email": "david.fernandez@example.com",
-      "imageUrl": "https://via.placeholder.com/800x400?text=Tecnologia+Movil",
-      "url": "https://www.example.com/evolucion-tecnologia-movil"
+      "id": "13",
+      "title": "Deportes: El Impacto de la Tecnología en el Rendimiento Deportivo",
+      "description": "Cómo la tecnología está mejorando el rendimiento de los atletas y cambiando el mundo de los deportes.",
+      "date": "2024-09-04",
+      "author": "William Brown",
+      "email": "william@deportes.com",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1683141483964-3b1a921045f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/tecnologia-deportes"
+    },
+    {
+      "id": "14",
+      "title": "Evolución del Diseño Gráfico: Tendencias y Herramientas Actuales",
+      "description": "Las últimas tendencias y herramientas en diseño gráfico que están transformando la forma en que se crean y presentan los diseños visuales.",
+      "date": "2024-09-08",
+      "author": "Amelia Carter",
+      "email": "amelia@diseno.com",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1661326291059-eb076cc5bdd6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/diseno-grafico"
+    },
+    {
+      "id": "15",
+      "title": "Economía Digital: El Auge de las Criptomonedas y Blockchain",
+      "description": "Un análisis de cómo las criptomonedas y la tecnología blockchain están revolucionando la economía digital.",
+      "date": "2024-09-10",
+      "author": "Lucas Wright",
+      "email": "lucas@economiadigital.com",
+      "imageUrl": "https://images.unsplash.com/photo-1640161704729-cbe966a08476?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/criptomonedas-blockchain"
+    },
+    {
+      "id": "16",
+      "title": "Viajes y Turismo: Destinos Emergentes para el 2024",
+      "description": "Explora los destinos emergentes que están ganando popularidad en el turismo para este año.",
+      "date": "2024-09-12",
+      "author": "Ella Adams",
+      "email": "ella@viajes.com",
+      "imageUrl": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2242&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/destinos-emergentes"
+    },
+    {
+      "id": "17",
+      "title": "Tecnología en el Hogar: Los Últimos Gadgets para Tu Casa",
+      "description": "Descubre los gadgets más recientes que están transformando la vida en el hogar, desde dispositivos inteligentes hasta electrodomésticos avanzados.",
+      "date": "2024-09-15",
+      "author": "Avery Green",
+      "email": "avery@hogar.com",
+      "imageUrl": "https://images.unsplash.com/photo-1717295248494-937c3a5655b1?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/gadgets-hogar"
+    },
+    {
+      "id": "18",
+      "title": "Innovaciones en Agricultura: Tecnologías que Transforman el Campo",
+      "description": "Las nuevas tecnologías están revolucionando la agricultura, desde drones hasta sistemas de monitoreo avanzados.",
+      "date": "2024-09-18",
+      "author": "Henry Nelson",
+      "email": "henry@agricultura.com",
+      "imageUrl": "https://images.unsplash.com/photo-1475116127127-e3ce09ee84e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/tecnologias-agricultura"
+    },
+    {
+      "id": "19",
+      "title": "Cine y Entretenimiento: Las Películas Más Esperadas del Año",
+      "description": "Una lista de las películas más esperadas para el resto del año, con avances y detalles sobre cada una.",
+      "date": "2024-09-22",
+      "author": "Liam Turner",
+      "email": "liam@cine.com",
+      "imageUrl": "https://images.unsplash.com/photo-1658999167159-3f6659cace61?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/peliculas-esperadas"
+    },
+    {
+      "id": "20",
+      "title": "Nuevas Políticas en Medio Ambiente: Cambios Clave para el Futuro",
+      "description": "Un análisis de las nuevas políticas ambientales que se están implementando para abordar los desafíos climáticos.",
+      "date": "2024-09-25",
+      "author": "Natalie Scott",
+      "email": "natalie@medioambiente.com",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1711987229773-3832fca590cd?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "url": "https://www.example.com/politicas-ambientales"
     }
   ]
 }

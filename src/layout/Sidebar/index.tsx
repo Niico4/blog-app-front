@@ -12,22 +12,16 @@ import {
   DropdownTrigger,
 } from '@nextui-org/react';
 import {
-  IconArrowBarToLeft,
   IconArticle,
-  IconBrandTinder,
-  IconBrightnessDown,
   IconCaretDown,
   IconHome,
   IconLogout,
-  IconMessage,
   IconPassword,
   IconSelector,
   IconSettings,
   IconUserCircle,
-  IconUsersGroup,
 } from '@tabler/icons-react';
 import { Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import NavItem from './NavItems';
 
@@ -45,39 +39,14 @@ const Sidebar = () => {
       icon: <IconArticle stroke={1.5} />,
       path: userPaths.blog,
     },
-    {
-      label: 'Sobre Nosotros',
-      icon: <IconUsersGroup stroke={1.5} />,
-      path: userPaths.aboutUs,
-    },
-    {
-      label: 'Testimonios',
-      icon: <IconMessage stroke={1.5} />,
-      path: userPaths.testimonials,
-    },
-    {
-      label: 'Novedades',
-      icon: <IconBrandTinder stroke={1.5} />,
-      path: userPaths.updates,
-    },
   ];
 
   return (
     <aside className="w-full h-full bg-black rounded-md px-8 py-10 flex flex-col justify-between">
-      <section className="flex justify-between items-center">
-        {/* //TODO:Logo del blog */}
-        <Avatar
-          src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-          size="lg"
-        />
-        <article className="flex items-center justify-center gap-2">
-          <Button isIconOnly color="default" aria-label="light mode" size="sm">
-            <IconBrightnessDown stroke={1.5} />
-          </Button>
-          <Button isIconOnly color="default" aria-label="Collapsed" size="sm">
-            <IconArrowBarToLeft stroke={1.5} />
-          </Button>
-        </article>
+      <section className="flex justify-center items-center">
+        <h2 className="text-white text-4xl font-bold text-center">
+          BlinkBytes
+        </h2>
       </section>
       <section>
         <nav className="text-white">
@@ -89,7 +58,7 @@ const Sidebar = () => {
                   icon={icon}
                   label={label}
                 />
-                {index === 3 && <Divider className="my-4 bg-[#222222]" />}
+                {index === 1 && <Divider className="my-4 bg-[#222222]" />}
               </Fragment>
             ))}
             <li>
@@ -108,27 +77,17 @@ const Sidebar = () => {
                 <DropdownMenu aria-label="Link Actions">
                   <DropdownItem
                     key="profile"
+                    href={`/${userPaths.root}/${userPaths.profile}`}
                     startContent={<IconUserCircle stroke={1.5} />}
                   >
-                    <NavLink
-                      to={`/${userPaths.root}/${userPaths.profile}`}
-                      className={'text-gray-300 flex gap-2 items-center'}
-                      unstable_viewTransition
-                    >
-                      Perfil
-                    </NavLink>
+                    Perfil
                   </DropdownItem>
                   <DropdownItem
                     key="changePassword"
+                    href={`/${userPaths.root}/${userPaths.changePassword}`}
                     startContent={<IconPassword stroke={1.5} />}
                   >
-                    <NavLink
-                      to={`/${userPaths.root}/${userPaths.changePassword}`}
-                      className={'text-gray-300 flex gap-2 items-center'}
-                      unstable_viewTransition
-                    >
-                      Cambiar Contraseña
-                    </NavLink>
+                    Cambiar Contraseña
                   </DropdownItem>
                 </DropdownMenu>
               </Dropdown>
