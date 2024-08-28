@@ -15,5 +15,6 @@ export const userPaths = {
   updates: 'updates',
 
   profile: 'profile',
+  changePassword: 'change-password',
   settings: 'settings',
 };

@@ -49,7 +49,6 @@ export const PostProvider: FC<{ children: ReactNode }> = ({ children }) => {
         };
 
         const { data } = await clientAxios('/posts', config);
-        console.log('Datos recibidos:', data);
         setPosts(data);
         const formattedPosts = data.map((post: IPost) => ({
           ...post,

@@ -172,7 +172,6 @@ const BlogPage = () => {
                   type="submit"
                   fullWidth
                   className="bg-custom-gradient-purple font-bold text-white tracking-wider my-2"
-                  onPress={onClose}
                 >
                   {initialValues._id ? 'Guardar Cambios' : 'Crear'}
                 </Button>

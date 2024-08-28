@@ -16,16 +16,20 @@ import {
   IconArticle,
   IconBrandTinder,
   IconBrightnessDown,
+  IconCaretDown,
   IconHome,
   IconLogout,
   IconMessage,
+  IconPassword,
   IconSelector,
   IconSettings,
   IconUserCircle,
   IconUsersGroup,
 } from '@tabler/icons-react';
-import NavItem from './NavItems';
 import { Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
+
+import NavItem from './NavItems';
 
 const Sidebar = () => {
   const { auth, signOut } = useAuth();
@@ -55,11 +59,6 @@ const Sidebar = () => {
       label: 'Novedades',
       icon: <IconBrandTinder stroke={1.5} />,
       path: userPaths.updates,
-    },
-    {
-      label: 'Configuración',
-      icon: <IconSettings stroke={1.5} />,
-      path: userPaths.settings,
     },
   ];
 
@@ -93,6 +92,47 @@ const Sidebar = () => {
                 {index === 3 && <Divider className="my-4 bg-[#222222]" />}
               </Fragment>
             ))}
+            <li>
+              <Dropdown>
+                <DropdownTrigger>
+                  <div
+                    className={
+                      'flex gap-2 items-center my-4 text-gray-300 cursor-pointer transition-all'
+                    }
+                  >
+                    <IconSettings stroke={1.5} />
+                    Configuración
+                    <IconCaretDown stroke={1.5} size={16} />
+                  </div>
+                </DropdownTrigger>
+                <DropdownMenu aria-label="Link Actions">
+                  <DropdownItem
+                    key="profile"
+                    startContent={<IconUserCircle stroke={1.5} />}
+                  >
+                    <NavLink
+                      to={`/${userPaths.root}/${userPaths.profile}`}
+                      className={'text-gray-300 flex gap-2 items-center'}
+                      unstable_viewTransition
+                    >
+                      Perfil
+                    </NavLink>
+                  </DropdownItem>
+                  <DropdownItem
+                    key="changePassword"
+                    startContent={<IconPassword stroke={1.5} />}
+                  >
+                    <NavLink
+                      to={`/${userPaths.root}/${userPaths.changePassword}`}
+                      className={'text-gray-300 flex gap-2 items-center'}
+                      unstable_viewTransition
+                    >
+                      Cambiar Contraseña
+                    </NavLink>
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+            </li>
           </ul>
         </nav>
       </section>
@@ -136,6 +176,7 @@ const Sidebar = () => {
             <DropdownItem
               key="profile"
               startContent={<IconUserCircle stroke={1.5} />}
+              href={`/${userPaths.root}/${userPaths.profile}`}
             >
               Perfil
             </DropdownItem>

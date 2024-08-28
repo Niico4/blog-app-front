@@ -23,7 +23,6 @@ interface Props {
   description: string;
   createdAt: number;
   tags?: string[] | null;
-  key: number;
 
   deletePost: (id: string) => void;
   updatePost: (post: IPost) => void;
@@ -36,13 +35,12 @@ const CardTemplate: FC<Props> = ({
   title,
   author,
   tags,
-  key,
   deletePost,
   updatePost,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Card className="max-w-[400px] p-4 max-h-[500px]" key={key}>
+    <Card className="max-w-[400px] p-4 max-h-[500px]">
       <CardHeader className="justify-between items-center py-0">
         <div className="flex gap-5">
           <Avatar
